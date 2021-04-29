@@ -1,0 +1,57 @@
+body{
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: center;
+}
+
+#age,#weight,#height{
+        border: 1px solid rgb(100, 99, 107);
+        border-radius: 5px;
+        width: 200px;
+        height: 30px;
+        display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+div.radio{
+    width: 200px;
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.radio {
+	display: inline-block;
+	margin-right: 10px;
+}
+.radio input[type=radio] {
+	display: none;
+}
+.radio label {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 15px;
+	line-height: 34px;
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 6px;
+	user-select: none;
+}
+
+/* Checked */
+.radio input[type=radio]:checked + label {
+	background: #3c3296;
+}
+
+/* Hover */
+.radio label:hover {
+	color: rgb(65, 63, 63);
+}

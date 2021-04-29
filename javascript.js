@@ -1,5 +1,5 @@
-    let btn = document.querySelector('button');
-    let total = document.querySelector('div');
+    let btn = document.getElementById('button');
+    let total = document.getElementById('total');
     btn.addEventListener('click', () =>
     total.style.display = 'block')
 

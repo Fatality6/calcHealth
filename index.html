@@ -9,13 +9,25 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Калькулятор здоровья</h1>
-      <input type="number" id="age" placeholder="Ваш возраст"/><br>
-      <input type="number" id="weight" placeholder="Ваш вес в кг"/><br>
-      <input type="number" id="height" placeholder="Ваш рост в см"/><br>
-      <input id = "male" class ="radio_male" type="radio" name="sex" checked/>Мужчина<br>
-      <input id = "female" class ="radio_female" type="radio" name="sex" />Женщина<br>
-      <button id="button" onclick="calPerDay()">Расчитать</button>
+    <div id="header">
+      <h1>Калькулятор здоровья</h1>
+    </div>
+    <div class="form">
+      <div class="input">
+        <input type="number" id="age" placeholder="Ваш возраст"/><br>
+        <input type="number" id="weight" placeholder="Ваш вес в кг"/><br>
+        <input type="number" id="height" placeholder="Ваш рост в см"/><br>
+      </div>
+      <div class="radio">
+        <input id = "male" class ="radio_male" type="radio" name="sex" checked/>
+        <label for="male">Мужской</label>
+        <input id = "female" class ="radio_female" type="radio" name="sex"/>
+        <label for="female">Женский</label>
+      </div>
+      <div class="button">
+        <button id="button" onclick="calPerDay()">Расчитать</button>
+      </div>
+    </div>
       <p>
         <div id="total" style="display: none">
           Текст
