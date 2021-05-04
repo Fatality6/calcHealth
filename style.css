@@ -1,6 +1,6 @@
 body{
-    background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    background-color: #F6F0E4;
+    /*background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);*/
 
     background-repeat: no-repeat;
     background-position: center center;
@@ -10,48 +10,86 @@ body{
 
 h1{
     text-align: center;
+    color: #0087BE;
+    font-size: 30pt;
+    font-family: Georgia, Times, serif;
+    /*letter-spacing: 1px;*/
 }
 
 #age,#weight,#height{
-        border: 1px solid rgb(100, 99, 107);
-        border-radius: 5px;
-        width: 200px;
-        height: 30px;
-        display: block;
+    border: 1px solid rgb(100, 99, 107);
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    background: #F8F7F7;
+    font-size: 15pt;
+    letter-spacing: 1px;
 }
 
 div.radio{
-    width: 200px;
-    height: 30px;
-    display: block;
+    width: auto;
+    height: 50px;
+    display: flex;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    /* padding-left: 377px; */
+    /* padding-top: 5px; */
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 .radio {
-	display: inline-block;
-	margin-right: 10px;
+  display: inline-block;
+  margin-right: 10px;
 }
 .radio input[type=radio] {
-	display: none;
+  display: none;
 }
 .radio label {
-	display: inline-block;
-	cursor: pointer;
-	padding: 0px 15px;
-	line-height: 34px;
-	border: 1px solid rgb(0, 0, 0);
-	border-radius: 6px;
-	user-select: none;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0px 15px;
+  line-height: 34px;
+  border: 1px solid #213536;
+  border-radius: 6px;
+  user-select: none;
+}
+
+#button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #213536;
+  border-radius: 6px;
+  user-select: none;
+  line-height: 34px;
+  width: 206px;
+  margin-top: 15px;
+  background: #0097C0;
+  font-size: 15pt;
+  letter-spacing: 6px;
+  color: #ffffff;
+}
+
+#total{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 24pt; /* Размер шрифта в пунктах */
+  font-family: Georgia, Times, serif;
 }
 
 /* Checked */
 .radio input[type=radio]:checked + label {
-	background: #3c3296;
+  background: #5B9C96;
 }
 
 /* Hover */
 .radio label:hover {
-	color: rgb(65, 63, 63);
+  color: #ffffff;
 }

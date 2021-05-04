@@ -1,38 +1,38 @@
 <!doctype html>
 <html>
-  <head>
-    <title>
-      <h1>Калькулятор здоровья</h1>
+<head>
+  <title>
+      Калькулятор здоровья
     </title>
-    <meta charset="UTF-8">
-    <link rel="icon" href="">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div id="header">
-      <h1>Калькулятор здоровья</h1>
-    </div>
-    <div class="form">
-      <div class="input">
-        <input type="number" id="age" placeholder="Ваш возраст"/><br>
-        <input type="number" id="weight" placeholder="Ваш вес в кг"/><br>
-        <input type="number" id="height" placeholder="Ваш рост в см"/><br>
-      </div>
-      <div class="radio">
-        <input id = "male" class ="radio_male" type="radio" name="sex" checked/>
-        <label for="male">Мужской</label>
-        <input id = "female" class ="radio_female" type="radio" name="sex"/>
-        <label for="female">Женский</label>
-      </div>
-      <div class="button">
-        <button id="button" onclick="calPerDay()">Расчитать</button>
-      </div>
-    </div>
-      <p>
-        <div id="total" style="display: none">
-          Текст
-        </div>
-      </p>
-    <script src="javascript.js" type="text/javascript"></script>
-  </body>
+  <meta charset="UTF-8">
+  <link rel="icon" href="">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header">
+   <h1>КАЛЬКУЛЯТОР ЗДОРОВЬЯ</h1>
+  </div>
+  <div class="input">
+   <input type="number" id="age" placeholder="Ваш возраст" min="1" max="99">
+   <br>
+   <input type="number" id="weight" placeholder="Ваш вес в кг">
+   <br>
+   <input type="number" id="height" placeholder="Ваш рост в см">
+   <br>
+   <div class="radio">
+    <input id="male" class="radio_male" type="radio" name="sex" checked>
+    <label for="male">Мужчина</label>
+    <input id="female" class="radio_female" type="radio" name="sex">
+    <label for="female">Женщина</label>
+   </div>
+   <div class="button">
+    <button id="button" onclick="calPerDay()">Расчитать</button>
+   </div>
+  </div>
+  <div id="total" style="display: none">
+    Текст
+  </div>
+  <p></p>
+  <script src="javascript.js" type="text/javascript"></script>
+</body>
 </html>

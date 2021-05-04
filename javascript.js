@@ -1,4 +1,4 @@
-    let btn = document.getElementById('button');
+let btn = document.getElementById('button');
     let total = document.getElementById('total');
     btn.addEventListener('click', () =>
     total.style.display = 'block')
@@ -26,8 +26,9 @@ function calPerDay() {
     }else {
         imt ='нормальный вес';
     }
+   
     if ((find("male").checked || find("female").checked) && age !="" && weight !="" && height !="") {
-        find("total").innerText="У Вас "+ imt + ", Ваша суточная норма : "+ bmr.toFixed() + " калорий.";
+        find("total").innerText="У Вас "+ imt+", Ваша суточная норма : "+ bmr.toFixed() + " калорий.";
     } else {
         find("total").innerText="Заполните все поля!";
     }
